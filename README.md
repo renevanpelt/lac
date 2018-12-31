@@ -33,8 +33,8 @@ Now you will be able to enter a project name and the
 [Success] created directory!    ./[PROJECT_NAME]/models
 [Success] created directory!    ./[PROJECT_NAME]/scrapers
 [Success] created directory!    ./[PROJECT_NAME]/helpers
-[Success] created file!     ./[PROJECT_NAME]/Gemfile
-[Success] created file!     ./[PROJECT_NAME]/config/wsfr.rb
+[Success] created file!         ./[PROJECT_NAME]/Gemfile
+[Success] created file!         ./[PROJECT_NAME]/config/wsfr.rb
 ```
 
 ## Technical stuff
