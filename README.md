@@ -7,7 +7,7 @@ The main goal of Lac is to reduce the work required to gather data form the open
 
  1. Enabling users to write and manage scrapers with DRY code
  2. User workflow should resemble well known (web) frameworks (partly inspired on Ruby on Rails)
- 3. 
+ 3. Vision is also a work in progress. Will write more about this later, discussion is very much welcome!
 
 # Getting started
 In this part we'll quickly go through the steps to get started using Lac.
