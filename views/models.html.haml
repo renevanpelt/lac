@@ -1,0 +1,15 @@
+
+%h1 Models
+
+%table
+  %thead
+    %th Name
+    %th #
+    %th Actions
+  %tbody
+    - models.each do |model|
+      %tr
+        %td= model
+        %td= model.all.count
+        %td
+          %a{href: "/models/#{model.name.underscore}"} Show

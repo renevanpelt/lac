@@ -1,0 +1,18 @@
+%h1= "Model #{model.name}"
+
+%table
+  %tbody
+    %th Primary Key
+    %td= model.primary_key
+%a{href: "/models/#{model.name.underscore}/csv"} Export to CSV
+%table
+  %thead
+    %th ID
+    - model.fields.each do |field|
+      %th= field
+  %tbody
+    - model.all.each do |id, obj|
+      %tr
+        %td= id
+        - model.fields.each do |field|
+          %td= obj[field.to_sym]

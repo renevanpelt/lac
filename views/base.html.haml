@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Lac
+    :css
+      td, th {
+        padding: 1em;
+        background-color: #efefff;
+      }
+      th {
+        background-color: #aeaeaf;
+      }
+  %body
+    %h1 Lac
+    %ul
+      %a{href: "/scrapers"}= "Scrapers (#{scrapers.count})"
+      %a{href: "/models"}= "Models (#{models.count})"
+    = content
