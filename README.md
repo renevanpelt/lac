@@ -37,12 +37,3 @@ Now you will be able to enter a project name and the
 [Success] created file!         ./[PROJECT_NAME]/config/wsfr.rb
 ```
 
-## Technical stuff
-
-
-```mermaid
-sequenceDiagram
-Now ->> Later: I'll add some diagrams later other graphic stuff later on
-
-```
-
