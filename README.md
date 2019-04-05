@@ -37,3 +37,57 @@ Now you will be able to enter a project name and the
 [Success] created file!         ./[PROJECT_NAME]/config/wsfr.rb
 ```
 
+Now `cd` into you project folder
+
+`cd [PROJECT_NAME]`
+
+You have not created any Scrapers or Models yet, so you still have an empty project. But you should be able to run the built in web interface like this:
+
+`$ lac server`
+
+Now visit http://localhost:4567 in your browser.
+
+## Workflow
+
+The goal is to collect data that fits one or more _**Models**_ you define.
+
+One or more **_Scrapers_** will define behaviour to fetch data from the web and gather instances of defined _**Models**_ and store them.
+
+### Defining a Model
+
+Your models live in the `models/` folder and assume the same naming conventions as Ruby on Rails models. For example, we will define a model called `NewsItem` that represents HackerNews entries.
+
+Create `models/news_item.rb` and enter the following code:
+
+```
+class NewsItem < WebscraperFramework::BaseModel
+  
+  field :title
+  field :points
+  field :external_identifier
+  
+  def primary_key
+    :external_identifier
+  end
+
+  def initialize
+    super
+  end
+  
+end
+```  
+
+
+### Defining a Scraper
+
+Your scrapers live in the `scrapers/` folder and also assume the same naming conventions as Ruby on Rails models. For example, we will define a model called `NewsItem` that represents HackerNews entries.
+
+Create `models/hackernews_scraper.rb` and enter the following code:
+
+
+## Upcoming Stuff
+
+- Create a website for the project
+- Create a generator for example scrapers and models
+- A place for discussion: I'm going to try to build a community of people who want a say in the future of Lac.
+ 
